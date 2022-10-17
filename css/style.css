@@ -61,7 +61,7 @@ img {
 
 /*paragraphs*/
 p {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 /*header section */
@@ -89,13 +89,21 @@ main {
 }
 
 .supervisor, .two-divs, .calculator {
-  margin: 2vmin;
+  margin: 1%;
   width: 30%;
 }
 
+.supervisor, .calculator {
+  padding: 2%;
+}
+
+.team, .karma {
+  padding: 6% !important;
+}
+
  .supervisor {
-  border-top: #45d3d3 solid 1vmin;
-  border-top: hsl(180, 62%, 55%) solid 1vmin; 
+  border-top: #45d3d3 solid 0.5rem;
+  border-top: hsl(180, 62%, 55%) solid 0.5rem; 
   box-shadow: 5px 10px 18px #cccccf;
 }
 
@@ -105,10 +113,11 @@ main {
 }
 
 .team {
-  border-top: #ea5353 solid 1vmin;
-  border-top: hsl(0, 78%, 62%) solid 1vmin;
+  border-top: #ea5353 solid 0.5rem;
+  border-top: hsl(0, 78%, 62%) solid 0.5rem;
   box-shadow: 5px 10px 18px #cccccf;
-  margin-bottom: 4vmin;
+  margin-bottom: 4%;
+  padding: 2%;
 }
 
 .team:hover {
@@ -117,9 +126,10 @@ main {
 }
 
 .karma {
-  border-top: #fcaf4a solid 1vmin;
-  border-top: hsl(34, 97%, 64%) solid 1vmin;
+  border-top: #fcaf4a solid 0.5rem;
+  border-top: hsl(34, 97%, 64%) solid 0.5rem;
   box-shadow: 5px 10px 18px #cccccf;
+  padding: 2%;
 }
 
 .karma:hover {
@@ -128,8 +138,8 @@ main {
 }
 
 .calculator {
-  border-top: #549ef2 solid 1vmin;
-  border-top: hsl(212, 86%, 64%) solid 1vmin;
+  border-top: #549ef2 solid 0.5rem;
+  border-top: hsl(212, 86%, 64%) solid 0.5rem;
   box-shadow: 5px 10px 18px #cccccf;
 }
 
@@ -169,26 +179,31 @@ main {
     font-size: 1.8em;
   }
 
-  .supervisor,
-  .two-divs,
-  .calculator {
+  .supervisor, .team, .karma, .calculator {
+    margin: 4% 0;
     width: 100%;
   }
+
+  .two-divs {
+    margin: 0;
+    width: 100%;
+  }
+
+  .supervisor, .calculator {
+    padding: 6%;
+  }
+
 }
 
 /*mobile view*/
 @media screen and (max-width:600px) {
 
   .container {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .main-heading {
     font-size: 1.6em;
   }
 
-  .supervisor, .two-divs, .calculator {
-    width: 100%;
-    margin: 2vmin 0;
-  }
 }
